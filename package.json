@@ -20,6 +20,7 @@
     "concurrently": "^3.5.0",
     "jquery": "^3.4.1",
     "json-server": "^0.16.1",
+    "minimist": "^1.2.5",
     "promise-polyfill": "^6.0.2",
     "webpack": "4.29.6",
     "webpack-cli": "3.3.0",
