@@ -12,7 +12,9 @@ Keep track of a monthly savings and give you an estimate on how much you will ha
 
 1. Run `npm install`
 
-1. Run `npm run dev` and visit
+2. run `npm run build`
+
+3. Run `npm run dev` and visit
    [http://localhost:1313/](http://localhost:1313/) in your browser. Open up
    the console and inspect the output.
    
