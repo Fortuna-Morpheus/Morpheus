@@ -1,0 +1,66 @@
+{
+  "bills": [
+    {
+      "monthly": [
+        {
+          "utilities": [
+            {
+              "phone": 117.97,
+              "electricity": 63.19,
+              "internet": 48.74,
+              "creditCard": 33.61
+            }
+          ]
+        },
+        {
+          "savings": [
+            {
+              "savingsTransfer": 150
+            }
+          ]
+        },
+        {
+          "auto": [
+            {
+              "vehicle1": [
+                {
+                  "title": "Austin's Vehicle",
+                  "year": "2001",
+                  "make": "Dodge",
+                  "model": "Ram 2500",
+                  "carPayment": 0,
+                  "insurance": 55.13
+                }
+              ],
+              "vehicle2": [
+                {
+                  "title": "Austin's Dream Vehicle",
+                  "year": "1998",
+                  "make": "Toyota",
+                  "model": "Supra",
+                  "carPayment": 419.16,
+                  "insurance": 104.13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "home": [
+            {
+              "mortgage": 0,
+              "homeOwnersInsurance": 0,
+              "rent": 1004.95,
+              "rentersInsurance": 66.89
+            }
+          ]
+        }
+      ],
+      "yearly": [
+        {
+          "homeOwnersInsurance": 0
+        }
+      ]
+    }
+  ]
+}
