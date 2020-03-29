@@ -1,66 +1,149 @@
 {
-  "bills": [
+  "bills":[
     {
-      "monthly": [
+      "alias": "Phone",
+      "name": "Phone Company",
+      "website": "www.google.com",
+      "amount": 117.97,
+      "dueDate": 1,
+      "frequency": "Monthly",
+      "category": "Utilities",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Power",
+      "name": "Electric Company",
+      "website": "www.google.com",
+      "amount": 63.19,
+      "dueDate": 15,
+      "frequency": "Monthly",
+      "category": "Utilities",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Internet",
+      "name": "Internet Company",
+      "website": "www.google.com",
+      "amount": 48.74,
+      "dueDate": 10,
+      "frequency": "Monthly",
+      "category": "Utilities",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "My credit card",
+      "name": "Credit Card Company",
+      "website": "www.google.com",
+      "amount": 33.61,
+      "dueDate": 17,
+      "frequency": "Monthly",
+      "category": "Utilities",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Savings",
+      "name": "Bank Name",
+      "website": "www.google.com",
+      "amount": 150.00,
+      "dueDate": [1,15],
+      "frequency": "Bi-Weekly",
+      "category": "Savings",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Austin's Vehicle",
+      "name": "Finance Company",
+      "website": "www.google.com",
+      "amount": 200.00,
+      "dueDate": 18,
+      "frequency": "Monthly",
+      "category": "Auto",
+      "status": false,
+      "vehicle": [
         {
-          "utilities": [
-            {
-              "phone": 117.97,
-              "electricity": 63.19,
-              "internet": 48.74,
-              "creditCard": 33.61
-            }
-          ]
-        },
-        {
-          "savings": [
-            {
-              "savingsTransfer": 150
-            }
-          ]
-        },
-        {
-          "auto": [
-            {
-              "vehicle1": [
-                {
-                  "title": "Austin's Vehicle",
-                  "year": "2001",
-                  "make": "Dodge",
-                  "model": "Ram 2500",
-                  "carPayment": 0,
-                  "insurance": 55.13
-                }
-              ],
-              "vehicle2": [
-                {
-                  "title": "Austin's Dream Vehicle",
-                  "year": "1998",
-                  "make": "Toyota",
-                  "model": "Supra",
-                  "carPayment": 419.16,
-                  "insurance": 104.13
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "home": [
-            {
-              "mortgage": 0,
-              "homeOwnersInsurance": 0,
-              "rent": 1004.95,
-              "rentersInsurance": 66.89
-            }
-          ]
-        }
-      ],
-      "yearly": [
-        {
-          "homeOwnersInsurance": 0
+          "year": "2001",
+          "make": "Dodge",
+          "model": "Ram 2500"
         }
       ]
+    },
+    {
+      "alias": "Austin's Dream Vehicle",
+      "name": "Finane Company",
+      "website": "www.google.com",
+      "amount": 400.00,
+      "dueDate": 18,
+      "frequency": "Monthly",
+      "category": "Auto",
+      "status": false,
+      "vehicle": [
+        {
+          "year": "1998",
+          "make": "Toyota",
+          "model": "Supra"
+        }
+      ]
+    },
+    {
+      "alias": "Home",
+      "name": "Mortgage Company",
+      "website": "www.google.com",
+      "amount": 500.00,
+      "dueDate": 5,
+      "frequency": "Monthly",
+      "category": "Home",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Rent House",
+      "name": "Mortgage Company",
+      "website": "www.google.com",
+      "amount": 1004.95,
+      "dueDate": 1,
+      "frequency": "Monthly",
+      "category": "Home",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Renter's Insurance",
+      "name": "Insurance Company",
+      "website": "www.google.com",
+      "amount": 66.89,
+      "dueDate": 23,
+      "frequency": "Monthly",
+      "category": "Home",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "Netflix",
+      "name": "Netflix",
+      "website": "www.netflix.com",
+      "amount": 10.00,
+      "dueDate": 8,
+      "frequency": "Monthly",
+      "category": "Misc",
+      "status": false,
+      "vehicle": ""
+    },
+    {
+      "alias": "house insurance",
+      "name": "Insurance Company",
+      "website": "www.google.com",
+      "amount": 500.00,
+      "dueDate": 28,
+      "frequency": "Yearly",
+      "category": "Home",
+      "status": false,
+      "vehicle": ""
     }
+    
   ]
 }
