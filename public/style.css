@@ -1,7 +1,12 @@
+/* CSS for the Body */
 body {
-    margin: 0;
-    padding: 0;
-    width:100vw;
-    height: 100vh;
     background-color: #eee;
 }
+
+/* CSS for the Jumbotron */
+.jumbotron-fluid {
+    height: 45vh;
+}
+
+
+
