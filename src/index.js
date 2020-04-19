@@ -48,7 +48,7 @@ $(document).ready(function () {
         // Push all elements of the table row to the empty string
         html += `
             <tr>
-                <th scope="row">${billPaid(status)}</th>
+                <th scope="row" class="paid-status">${billPaid(status)}</th>
                 <td>${category}</td>
                 <td>${alias}</td>
                 <td>\$${amount}</td>
@@ -70,6 +70,11 @@ $(document).ready(function () {
         bills.forEach(({status, category, alias, name, amount, dueDate, frequency, website}) => {
             // uses above function to take data and append it to HTML
             $("#dataTextArea").append(createTableData(status, category, alias, name, amount, dueDate, frequency, website));
+        });
+
+        // Adds click functions since data is created on HTML
+        $(".paid-status").click(()=> {
+            console.log(this);
         })
     };
 
@@ -81,6 +86,8 @@ $(document).ready(function () {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
         console.log(error);
     });
+
+
 
 
 });
