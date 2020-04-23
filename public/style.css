@@ -5,8 +5,8 @@ body {
 
 /* CSS for the Jumbotron */
 .jumbotron-fluid {
-    height: 35vh;
-    /*height: 75vh;*/
+    /*height: 35vh;*/
+    height: 75vh;
 }
 
 

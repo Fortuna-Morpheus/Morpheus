@@ -19,7 +19,6 @@ $(document).ready(function () {
         return requestedBills; // returns array of bills meeting freq requested
     };
 
-
     console.log(getBillsMonthly("Bi-Weekly"));
     console.log(getBillsMonthly("Monthly"));
     console.log(getBillsMonthly("Yearly"));
@@ -88,6 +87,31 @@ $(document).ready(function () {
     });
 
 
+    // JS for Pie Chart
+
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Bill', 'Amount'],
+            ['Cable', 8],
+            ['Friends', 2],
+            ['Eat', 2],
+            ['TV', 2],
+            ['Gym', 2],
+            ['Sleep', 8]
+        ]);
+
+        // Optional; add a title and set the height of the chart
+        var options = {'title':'My Average Day', 'height':450};
+
+        // Display the chart inside the <div> element with id="piechart"
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+    }
 
 
 });
