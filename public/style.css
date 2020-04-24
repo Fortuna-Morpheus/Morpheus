@@ -1,12 +1,37 @@
-/* CSS for the Body */
+
 body {
     background-color: #eee;
 }
 
-/* CSS for the Jumbotron */
-.jumbotron-fluid {
-    /*height: 35vh;*/
-    height: 75vh;
+/*-----------NAVBAR------------*/
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+    float: none;  /* Cancel default li float: left */
+    width: 139px;
+}
+
+.navbar-fixed-left + .container {
+    padding-left: 160px;
+}
+
+.container {
+    height: 1000px;
+}
+
+.wrapper {
+    margin-left: 140px;
+}
+/*-----------SEARCH------------*/
+.search-input{
+    position: fixed;
+    right: 30px;
+    top: 3%;
 }
 
 

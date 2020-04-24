@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> <!-- Lato -->
@@ -25,101 +25,101 @@
 <!-- Container holding everything -->
 <div class="container-fluid m-0 p-0">
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><i class="fa fa-stack-overflow"></i> Morpheus</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!--navigation-->
+    <div class="navbar navbar-inverse navbar-fixed-left">
+        <a class="navbar-brand" href="#">BUMBO</a>
+        <ul class="nav navbar-nav">
+            <li><a href="#home"><i class="fa fa-home"></i><span> Calendar </span></a></li>
+            <li><a href="#info"><i class="fa fa-info-circle"></i><span> Goal </span></a></li>
+            <li><a href="#love"><i class="fa fa-heart"></i><span> Household</span></a></li>
+            <li><a href="#work"><i class="fa fa-briefcase"></i><span> Settings </span></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope"></i><span> Login </span></a></li>
+        </ul>
+    </div>
+    <!--end navigation-->
+    <!--Begin search bar-->
+    <div>
+        <form class="form-inline my-2 my-lg-0 search-input">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+    <!--End search bar-->
+    <!-- 1st section-->
+    <div class="wrapper">
+        <div class="container" id="home">
+            <div class="row">
+                <h2>Link 1</h2>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Overall </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="monthlyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Monthly
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="monthlyDropdown">
+            <!-- Jumbotron area where charts and calendar will be displayed -->
+            <div class="jumbotron-fluid bg-secondary">
+                <!-- Text above Chart -->
+                <section class="d-flex justify-content-between w-100">
+                    <p class="ml-1">Expenses Chart</p>
+                    <p class="mr-1">Calendar View </p>
+                </section>
 
-                        <!-- TODO: Create functionality to append new stuff here -->
+                <!-- Chart Section -->
+                <section class="w-100 h-75 bg-primary" id="piechart">
+                    CHART AREA
+                </section>
 
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="yearlyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Yearly
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="yearlyDropdown">
-
-                        <!-- TODO: Create functionality to append new stuff here -->
-
-                    </div>
-                </li>
-            </ul>
-
-
-            <!-- Search Functionality -->
-            <!-- Edited out for now -->
-
-    <!--        <form class="form-inline my-2 my-lg-0">-->
-    <!--            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-    <!--            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-    <!--        </form>-->
-
+            </div>
+            <!-- Jumbotron End -->
 
         </div>
-    </nav>
-    <!-- Navbar end -->
-
-    <!-- Jumbotron area where charts and calendar will be displayed -->
-    <div class="jumbotron-fluid bg-secondary">
-        <!-- Text above Chart -->
-        <section class="d-flex justify-content-between w-100">
-            <p class="ml-1">Expenses Chart</p>
-            <p class="mr-1">Calendar View </p>
-        </section>
-
-        <!-- Chart Section -->
-        <section class="w-100 h-75 bg-primary" id="piechart">
-            CHART AREA
-        </section>
-
     </div>
-    <!-- Jumbotron End -->
-
-    <!-- Bottom area of the site -->
-    <div class="row mx-1" id="bottom-area">
-        <p class=" mx-auto font-weight-bold">Monthly Expenses</p>
-        <table class="table table-striped text-center">
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">Status</th>
-                <th scope="col">Category</th>
-                <th scope="col">Name</th>
-                <th scope="col">Amount</th>
-                <th scope="col">Due Date</th>
-                <th scope="col">Frequency</th>
-                <th scope="col">Website</th>
-            </tr>
-            </thead>
-            <tbody id="dataTextArea">
-            <!-- Data gets generated here -->
-            </tbody>
-        </table>
+    <!-- 2nd section-->
+    <div class="container" id="info">
+        <div class="row">
+            <h2>Link 2</h2>
+        </div>
+        <!-- Bottom area of the site -->
+        <div class="row mx-1" id="bottom-area">
+            <p class=" mx-auto font-weight-bold">Monthly Expenses</p>
+            <table class="table table-striped text-center">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Website</th>
+                </tr>
+                </thead>
+                <tbody id="dataTextArea">
+                <!-- Data gets generated here -->
+                </tbody>
+            </table>
+        </div>
+        <!-- Bottom area End -->
     </div>
-    <!-- Bottom area End -->
+    <!--3rd section-->
+    <div class="container" id="love">
+        <div class="row">
+            <h2>Link 3</h2>
+        </div>
+    </div>
+    <!--4th section-->
+    <div class="container" id="work">
+        <div class="row">
+            <h2>Link 4</h2>
+        </div>
+    </div>
+    <!--5th section-->
+    <div class="container" id="contact">
+        <div class="row">
+            <h2>Link 5</h2>
+        </div>
+    </div>
+</div>
+
 
 </div>
 <!-- Container End -->
-
-
-
-
 
 
 <!-- Google Chart JS -->
