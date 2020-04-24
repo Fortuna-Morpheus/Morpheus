@@ -19,7 +19,6 @@ $(document).ready(function () {
         return requestedBills; // returns array of bills meeting freq requested
     };
 
-
     console.log(getBillsMonthly("Bi-Weekly"));
     console.log(getBillsMonthly("Monthly"));
     console.log(getBillsMonthly("Yearly"));
@@ -48,7 +47,7 @@ $(document).ready(function () {
         // Push all elements of the table row to the empty string
         html += `
             <tr>
-                <th scope="row">${billPaid(status)}</th>
+                <th scope="row" class="paid-status">${billPaid(status)}</th>
                 <td>${category}</td>
                 <td>${alias}</td>
                 <td>\$${amount}</td>
@@ -70,6 +69,11 @@ $(document).ready(function () {
         bills.forEach(({status, category, alias, name, amount, dueDate, frequency, website}) => {
             // uses above function to take data and append it to HTML
             $("#dataTextArea").append(createTableData(status, category, alias, name, amount, dueDate, frequency, website));
+        });
+
+        // Adds click functions since data is created on HTML
+        $(".paid-status").click(()=> {
+            console.log(this);
         })
     };
 
@@ -81,6 +85,33 @@ $(document).ready(function () {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
         console.log(error);
     });
+
+
+    // JS for Pie Chart
+
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Bill', 'Amount'],
+            ['Cable', 8],
+            ['Friends', 2],
+            ['Eat', 2],
+            ['TV', 2],
+            ['Gym', 2],
+            ['Sleep', 8]
+        ]);
+
+        // Optional; add a title and set the height of the chart
+        var options = {'title':'My Average Day', 'height':450};
+
+        // Display the chart inside the <div> element with id="piechart"
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+    }
 
 
 });
