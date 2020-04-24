@@ -19,100 +19,167 @@
     <title>Bills Tracker</title>
 
 </head>
-<body class="m-0 p-0">
+<body>
 
+<!-- Begin navigation-->
+<nav class="navbar navbar-expand-lg navbar-inverse  navbar-light navbar-fixed-left d-flex flex-column">
+    <!-- Button for toggling the visibility of the menu -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand p-5" href="#expenses">BUMBO</a>
+    <!--End Button for toggling the visibility of the menu -->
+    <!--Begin Mobile Menu collapsed-->
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="nav navbar-nav">
+            <li class="nav-item p-3"><a class="nav-link" href="#expenses"><i
+                    class="fa fa-home"></i><span> Expenses </span></a></li>
+            <li class="nav-item p-3"><a class="nav-link" href="#goal"><i
+                    class="fa fa-info-circle"></i><span> Goal </span></a></li>
+            <li class="nav-item p-3"><a class="nav-link" href="#household"><i
+                    class="fa fa-heart"></i><span> Household</span></a></li>
+            <li class="nav-item p-3"><a class="nav-link" href="#settings"><i
+                    class="fa fa-briefcase"></i><span> Settings </span></a></li>
+            <li class="nav-item p-3"><a class="nav-link" href="#login"><i
+                    class="fa fa-envelope"></i><span> Login </span></a></li>
+        </ul>
+    </div>
+    <!--End Mobile Menu collapsed-->
+</nav>
+
+<!--end navigation-->
+<!--Begin search bar-->
+<div class="search-bar">
+    <form class="form-inline my-2 my-lg-0 search-input">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+<!--End search bar-->
 
 <!-- Container holding everything -->
 <div class="container-fluid m-0 p-0">
 
-    <!--navigation-->
-    <div class="navbar navbar-inverse navbar-fixed-left">
-        <a class="navbar-brand" href="#">BUMBO</a>
-        <ul class="nav navbar-nav">
-            <li><a href="#home"><i class="fa fa-home"></i><span> Calendar </span></a></li>
-            <li><a href="#info"><i class="fa fa-info-circle"></i><span> Goal </span></a></li>
-            <li><a href="#love"><i class="fa fa-heart"></i><span> Household</span></a></li>
-            <li><a href="#work"><i class="fa fa-briefcase"></i><span> Settings </span></a></li>
-            <li><a href="#contact"><i class="fa fa-envelope"></i><span> Login </span></a></li>
-        </ul>
-    </div>
-    <!--end navigation-->
-    <!--Begin search bar-->
-    <div>
-        <form class="form-inline my-2 my-lg-0 search-input">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-    <!--End search bar-->
     <!-- 1st section-->
-    <div class="wrapper">
-        <div class="container" id="home">
-            <div class="row">
-                <h2>Link 1</h2>
+    <div class="container" id="expenses">
+        <div class="row">
+            <h2>Expenses</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Expense Chart</h5>
+                        <!-- Chart Section -->
+                        <section class="w-100 h-75 bg-primary" id="piechart">
+                            <!--CHART AREA-->
+                        </section>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- Jumbotron area where charts and calendar will be displayed -->
-            <div class="jumbotron-fluid bg-secondary">
-                <!-- Text above Chart -->
-                <section class="d-flex justify-content-between w-100">
-                    <p class="ml-1">Expenses Chart</p>
-                    <p class="mr-1">Calendar View </p>
-                </section>
-
-                <!-- Chart Section -->
-                <section class="w-100 h-75 bg-primary" id="piechart">
-                    CHART AREA
-                </section>
-
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Website</th>
+                                <th scope="col">Autopay</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Water</td>
+                                <td>$169</td>
+                                <td>water.com</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Electric</td>
+                                <td>$50</td>
+                                <td>gvec.com</td>
+                                <td>no</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>HOA</td>
+                                <td>$200</td>
+                                <td>None</td>
+                                <td>No</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Card Body-->
+                </div>
+                <!-- End Card-->
             </div>
-            <!-- Jumbotron End -->
+            <!-- End Column-->
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- End Expenses Container -->
+</div>
 
-        </div>
+<!-- 2nd section-->
+<div class="container" id="goal">
+    <div class="row">
+        <h2>Goal</h2>
     </div>
-    <!-- 2nd section-->
-    <div class="container" id="info">
-        <div class="row">
-            <h2>Link 2</h2>
-        </div>
-        <!-- Bottom area of the site -->
-        <div class="row mx-1" id="bottom-area">
-            <p class=" mx-auto font-weight-bold">Monthly Expenses</p>
-            <table class="table table-striped text-center">
-                <thead class="thead-dark">
-                <tr>
-                    <th scope="col">Status</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Due Date</th>
-                    <th scope="col">Frequency</th>
-                    <th scope="col">Website</th>
-                </tr>
-                </thead>
-                <tbody id="dataTextArea">
-                <!-- Data gets generated here -->
-                </tbody>
-            </table>
-        </div>
-        <!-- Bottom area End -->
+</div>
+<!--3rd section-->
+<div class="container" id="household">
+    <div class="row">
+        <h2>Household</h2>
     </div>
-    <!--3rd section-->
-    <div class="container" id="love">
-        <div class="row">
-            <h2>Link 3</h2>
-        </div>
+</div>
+<!--4th section-->
+<div class="container" id="settings">
+    <div class="row">
+        <h2>Settings</h2>
     </div>
-    <!--4th section-->
-    <div class="container" id="work">
-        <div class="row">
-            <h2>Link 4</h2>
-        </div>
+</div>
+<!--5th section-->
+<div class="container" id="login">
+    <div class="row">
+        <h2>Login</h2>
     </div>
-    <!--5th section-->
-    <div class="container" id="contact">
-        <div class="row">
-            <h2>Link 5</h2>
+    <div class="row">
+        <div class="dropdown-menu">
+            <form class="px-4 py-3">
+                <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                           placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                           placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? Sign up</a>
+            <a class="dropdown-item" href="#">Forgot password?</a>
         </div>
     </div>
 </div>
@@ -124,6 +191,20 @@
 
 <!-- Google Chart JS -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- Custom JS -->
 <script src="./main.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
